@@ -107,8 +107,8 @@ public class SparseArray {
         while ((line = in.readLine()) != null) {
             String[] temp = line.split("\t");
             List<Integer> slist = new ArrayList<>();
-            for (int j = 0; j < temp.length; j++) {
-                slist.add(Integer.valueOf(temp[j]));
+            for (String aTemp : temp) {
+                slist.add(Integer.valueOf(aTemp));
             }
             map.put(k + "", slist);
             k++;
